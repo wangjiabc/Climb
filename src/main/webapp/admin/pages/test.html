@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+ 
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">findAll</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">1</a></li>
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">2</a></li>
+            <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    3
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav> 
+ 
+<table id="table"></table>
+<script type="text/javascript">
+$('#table').bootstrapTable({
+    url: '../test/get.do',
+    columns: [{
+        field: 'title',
+        title: 'title'
+    }, {
+        field: 'content',
+        title: 'content'
+    }, {
+        field: 'path',
+        title: 'path'
+    }, ]
+});
+</script>
+</html>

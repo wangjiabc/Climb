@@ -25,6 +25,7 @@ import redis.clients.jedis.Jedis;
 @RequestMapping("/test2")
 public class testAffairController {
 	
+	
 	private static final Logger logger = LoggerFactory.getLogger("test");
 	
 	private Jedis jedis;

@@ -3,9 +3,9 @@ $('#auser').click(function(){
    $('#content').attr('src','pages/user.html');
  });
 
-$('#aeject').click(function(){
-	   $('#content').load('pages/test.html');
-	   $('#content').attr('src','pages/test.html');
+$('#assort').click(function(){
+	   $('#content').load('pages/assort.html');
+	   $('#content').attr('src','pages/assort.html');
 	 });
 
 $('#business').click(function(){
